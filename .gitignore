@@ -1,0 +1,17 @@
+.DS_Store
+*.swp
+*.iml
+node_modules
+node_modules/
+bower_components/
+package.json
+webpack/
+webpack.config.js
+assets/stylesheets/sprites/
+public/images/
+public/stylesheets/
+public/javascripts/
+web/assets_gen.go
+assets_map.json
+.idea
+loop*

@@ -1,0 +1,49 @@
+# This is the TOML config file for project: zhiwang_web
+
+[package]
+name = "loop_hole"
+version = "0.1"
+authors = [
+    "tingliangtan<tingliangtan1@creditease.cn>",
+]
+build_opts = []
+is_graceful = false
+deps = [
+    "github.com/mijia/sweb/...",
+    "gopkg.in/redis.v3",
+    "github.com/satori/go.uuid",
+]
+
+[distribution]
+build_opts = []
+pack_extras = ["templates", "assets_map.json"]
+cross_targets = []
+
+[assets]
+url_prefix = "/assets"
+assets_mapping_json = "assets_map.json"
+image_exts = [".png", ".jpg", ".jpeg", ".gif"]
+deps = [
+    "jquery@1.11.1",
+    "git+http://gitlab.yxapp.xyz/f2e/browserify-zepto.git",
+    "es5-shim",
+    "react@0.13.3",
+    "jquery.cookie",
+    "react-cookie@0.2.5",
+    "react-router@0.13.3",
+    "lodash",
+    "node-cryptojs-aes",
+    "react-style",
+    "reflux@0.3",
+    "reflux-core@0.3",
+    "stylus@0.54.2",
+    "vue",
+    "normalize.css",
+    "slick-carousel",
+    "progressbar.js",
+    "fastclick",
+    "hammer",
+    "babel-polyfill",
+    "q"
+]
+
